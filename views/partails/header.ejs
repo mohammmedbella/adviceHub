@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title><%= pageTitle %></title>
+
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+      </div>
+        <script>
+    window.addEventListener('load', function() {
+      var loader = document.querySelector('.loader-container');
+      setTimeout(function() {
+        loader.style.display = 'none';
+      }, 2000);
+    });
+  </script>

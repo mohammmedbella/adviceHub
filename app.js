@@ -14,7 +14,7 @@ const app = express()
 app.use(express.static('public'));
 app.set('view engine' , 'ejs')
 
-const dbURL = 'mongodb://127.0.0.1:27017/tawjihiDB'
+const dbURL = 'mongodb+srv://mohammmedbella:test123@cluster0.18cv2um.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect( dbURL,{
   useNewUrlParser: true,
   useUnifiedTopology: true
